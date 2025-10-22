@@ -1,2 +1,12 @@
 #!/bin/bash
-for a in {a..z}; do for b in {a..z}; do echo $a$b; done; done
+#!/bin/bash
+for a in {a..z}
+do
+  for b in {a..z}
+  do
+    if [ $a$b != oo ]
+    then
+      echo $a$b
+    fi
+  done
+done
